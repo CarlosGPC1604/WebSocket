@@ -4,6 +4,22 @@ body {
     color: whitesmoke;
 }
 
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#messagesContenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    overflow-y: auto;
+    padding: 1rem 2rem;
+    overflow: auto;
+}
+
 #formInputMensaje {
     background: rgba(184, 184, 184, 0.15);
     padding: 0.25rem;
