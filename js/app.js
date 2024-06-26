@@ -17,6 +17,11 @@ function render(data){
 	document.getElementById('message').innerHTML = html;
 }
 
+function scrollToBottom() {
+    const contenedor = document.getElementById('messagesContenedor');
+    contenedor.scrollTop = contenedor.scrollHeight;
+}
+
 function agregarMensaje(e){
 	var mensaje = {
 		usuario: document.getElementById("inputNombreUsuario").value,
@@ -24,6 +29,7 @@ function agregarMensaje(e){
 	};
 
 	socket.emit("nuevo-mensaje", mensaje);
+	scrollToBottom();
 	return false;
 }
 
