@@ -1,9 +1,11 @@
 body {
     font: normal 1em Montserrat, Arial, sans-serif;
+    background-color: #0c0c0c;
+    color: whitesmoke;
 }
 
 #formInputMensaje {
-    background: rgba(0, 0, 0, 0.15);
+    background: rgba(184, 184, 184, 0.15);
     padding: 0.25rem;
     position: fixed;
     bottom: 0;
@@ -15,6 +17,8 @@ body {
 }
 
 #inputNombreUsuario {
+    color: whitesmoke;
+    background-color: #0c0c0c;
     border: none;
     border-radius: 2rem;
     outline: 0;
@@ -27,6 +31,8 @@ body {
     visibility: hidden;}
 
 #inputMensaje {
+    color: whitesmoke;
+    background-color: #0c0c0c;
     border: none;
     flex-grow: 1;
     border-radius: 2rem;
