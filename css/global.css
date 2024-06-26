@@ -11,6 +11,24 @@ header {
     padding: 0 1rem;
 }
 
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 20vw;
+    height: 2rem;
+    outline: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 7px;
+    background-color: #f3005d;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
 /* Estilado de la scrollbar */
 * {
     scrollbar-width: auto;
@@ -31,8 +49,16 @@ header {
     border-radius: 10px;
     border: 3px none #ffffff;
 }
-
 /* Estilado de la scrollbar */
+
+.systemMessage > strong{
+    color: #f3005d;
+    font-weight: 700;
+}
+
+.systemMessage > em{
+    font-weight: 600;
+}
 
 #messagesContenedor {
     background-color: #121212;
@@ -66,6 +92,7 @@ header {
 
 #inputNombreUsuario {
     color: whitesmoke;
+    font-weight: 600;
     background-color: #0c0c0c;
     border: none;
     border-radius: 2rem;
@@ -114,20 +141,6 @@ inputUsuario:focus {
     }
 }
 
-a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    width: 20vw;
-    height: 2rem;
-    outline: 0;
-    cursor: pointer;
-    border: none;
-    border-radius: 7px;
-    background-color: #f3005d;
-    color: white;
-    font-weight: 400;
-    font-size: 16px;
-    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+#editingSection{
+    padding: 0 1rem;
 }

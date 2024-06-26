@@ -12,7 +12,11 @@ socket.on("message", function(data){
 function render(data){
 	var html = "";
 	data.forEach(function(elem, index){
+		if(elem.usuario === "#System"){
+			html += "<div class=\"systemMessage\"><strong>" + elem.usuario +"</strong>:  <em>" + elem.texto+ "</em></div>"
+		} else {
 		html += "<div><strong>" + elem.usuario +"</strong>:  <em>" + elem.texto+ "</em></div>"
+		}
 	});
 	document.getElementById('message').innerHTML = html;
 }

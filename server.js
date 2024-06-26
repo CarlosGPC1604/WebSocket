@@ -11,17 +11,13 @@ app.get("/demo", function (req, res){
 
 var message = [
 	{
-		usuario: "Jorge",
-		texto: "Hola! que tal?",
+		usuario: "#System",
+		texto: "Bienvenido al chat con NodeJS y Socket.io...",
 	},
-	{
-		usuario: "Maria",
-		texto: "Muy bien y tu?",
-	}
 ];
 
 io.on("connection", function(socket){
-	console.log("Alguien se conecto al Socket");
+	console.log("Se unió alguien al Socket...");
 	socket.emit("message", message);
 
 	socket.on("nuevo-mensaje", function(data){
@@ -33,5 +29,5 @@ io.on("connection", function(socket){
 });
 
 server.listen(8080, function(){
-	console.log("Servidor corriendo en http://127.0.0.1:8080");
+	console.log("Socket ejecutándose en la dirección: http://127.0.0.1:8080");
 });
