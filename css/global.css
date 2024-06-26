@@ -5,8 +5,10 @@ body {
 }
 
 header {
-    display: grid;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
 }
 
 /* Estilado de la scrollbar */
@@ -113,9 +115,12 @@ inputUsuario:focus {
 }
 
 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
-    text-align: center;
     width: 20vw;
+    height: 2rem;
     outline: 0;
     cursor: pointer;
     border: none;
