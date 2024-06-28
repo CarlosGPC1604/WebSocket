@@ -1,3 +1,4 @@
+const { timeStamp, time } = require("console");
 var express = require("express");
 var app = express();
 var server = require("http").Server(app);
@@ -17,8 +18,8 @@ var message = [
 ];
 
 io.on("connection", function(socket){
-	console.log("Se unió alguien al Socket...");
-	socket.emit("message", message);
+	
+	socket.emit("message", message);console.log("[" + new Date().toLocaleString() + "]: Se unió alguien al Socket...");
 
 	socket.on("nuevo-mensaje", function(data){
 		message.push(data);
